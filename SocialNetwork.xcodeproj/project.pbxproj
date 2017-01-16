@@ -20,6 +20,8 @@
 		055A3B211E0D8C0B005D7041 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 055A3B201E0D8C0B005D7041 /* GoogleService-Info.plist */; };
 		05FCA8AD1E2858E400062372 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCA8AC1E2858E400062372 /* FeedVC.swift */; };
 		05FCA8AF1E2BD6FB00062372 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCA8AE1E2BD6FB00062372 /* CircleView.swift */; };
+		05FCA8B11E2C616600062372 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCA8B01E2C616600062372 /* PostCell.swift */; };
+		05FCA8B41E2D240200062372 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCA8B31E2D240200062372 /* DataServices.swift */; };
 		3594AFABFCA989CB8028E06C /* Pods_SocialNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83F14921F7FE7595C41380D /* Pods_SocialNetwork.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		055A3B201E0D8C0B005D7041 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		05FCA8AC1E2858E400062372 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		05FCA8AE1E2BD6FB00062372 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		05FCA8B01E2C616600062372 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		05FCA8B31E2D240200062372 /* DataServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
 		81FD7B2E8AA9130472234E01 /* Pods-SocialNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialNetwork/Pods-SocialNetwork.release.xcconfig"; sourceTree = "<group>"; };
 		D83F14921F7FE7595C41380D /* Pods_SocialNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC6854AA40FCE45337C5EBDC /* Pods-SocialNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialNetwork/Pods-SocialNetwork.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 				0555264D1E0DEFF600CD7B09 /* FancyField.swift */,
 				0555264F1E0DF0F700CD7B09 /* FancyButton.swift */,
 				05FCA8AE1E2BD6FB00062372 /* CircleView.swift */,
+				05FCA8B01E2C616600062372 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 		055A3B0D1E0D83BB005D7041 /* SocialNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				05FCA8B21E2D23D500062372 /* Services */,
 				055526481E0DEBA500CD7B09 /* Util */,
 				055526451E0D8F9100CD7B09 /* Controller */,
 				055526431E0D8F6C00CD7B09 /* View */,
@@ -134,6 +140,14 @@
 				055A3B201E0D8C0B005D7041 /* GoogleService-Info.plist */,
 			);
 			path = SocialNetwork;
+			sourceTree = "<group>";
+		};
+		05FCA8B21E2D23D500062372 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				05FCA8B31E2D240200062372 /* DataServices.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		D1BD9673E12E8BE2A490DC03 /* Frameworks */ = {
@@ -274,10 +288,12 @@
 				055A3B111E0D83BB005D7041 /* SignInVC.swift in Sources */,
 				0555264C1E0DEE5700CD7B09 /* RoundBtn.swift in Sources */,
 				055526501E0DF0F700CD7B09 /* FancyButton.swift in Sources */,
+				05FCA8B41E2D240200062372 /* DataServices.swift in Sources */,
 				05FCA8AD1E2858E400062372 /* FeedVC.swift in Sources */,
 				055A3B0F1E0D83BB005D7041 /* AppDelegate.swift in Sources */,
 				055526471E0DEB3C00CD7B09 /* FancyView.swift in Sources */,
 				0555264A1E0DEBDC00CD7B09 /* Constants.swift in Sources */,
+				05FCA8B11E2C616600062372 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
